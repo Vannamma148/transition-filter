@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS | Transition Properties</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Transition Properties</h1>
+        <section class="translate">
+            <h2>Translate</h2>
+            <p>The translate property in CSS moves an element along the X, Y, or Z axes without affecting its layout.
+            </p>
+            <!-- <ul>
+                <li><code>translateX(value)</code>: Moves horizontally.</li>
+                <li><code>translateY(value)</code>: Moves vertically.</li>
+                <li><code>translateZ(value)</code>: Moves in 3D space (depth).</li>
+                <li><code>translate(valueX, valueY)</code>: Moves in both X and Y axes.</li>
+                <li><code>translate3d(valueX, valueY, valueZ)</code>: Moves in all three axes (X, Y, Z) for 3D effects.</li>
+              </ul>
+               -->
+            <div class="container">
+                <div class="box">
+                    Transition EASE
+                    <p> transform: translate(-50px, 60px);</p>
+                </div>
+                <div class="box">
+                    Transition EASE IN
+                    <p> transform: translate(100px, -60px);</p>
+                </div>
+                <div class="box">
+                    Transition EASE OUT
+                    <p> transform: translateX(40px);</p>
+                </div>
+                <div class="box">
+                    Transition EASE IN OUT
+                    <p> transform: translateY(20px);</p>
+                </div>
+
+            </div>
+        </section>
+        <section class="scale">
+            <h2>Scale</h2>
+            <div class="container">
+                <div class="sbox">
+                    transform: scale(1.2, 1.4);
+                </div>
+                <div class="sbox">
+                    transform: scaleX(-1);
+                </div>
+                <div class="sbox">
+                    transform: scaleY(-1);
+                </div>
+                <div class="sbox">
+                    transform: scaleX(1.2);
+                </div>
+                <div class="sbox">
+                    transform: scaleY(1.4);
+                </div>
+
+            </div>
+        </section>
+
+        <section class="rotate">
+            <h2>Rotate</h2>
+            <div class="container">
+                <div class="rbox"> transform: rotate(90deg); </div>
+                <div class="rbox"> transform: rotateX(180deg);</div>
+                <div class="rbox"> transform: rotateY(120deg);</div>
+                <div class="rbox">ransform: rotate3d(60deg);</div>
+                <div class="rbox">transform: rotate(360deg);
+                    border-radius: 20%;</div>
+            </div>
+           
+        </section>
+        <a href="filter.html" class="btn-link">Filter CSS</a>
+
+    </main>
+</body>
+
+</html>
